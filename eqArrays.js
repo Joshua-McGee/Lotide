@@ -17,9 +17,8 @@ const eqArrays = function(arrayOne, arrayTwo) {
   if (!Array.isArray(arrayOne) || ! Array.isArray(arrayTwo) || arrayOne.length !== arrayTwo.length)
     return false;
 
-    // create new variables and concat them together plus sort them
-    let arr1 = arrayOne.concat().sort();
-    let arr2 = arrayTwo.concat().sort();
+    let arr1 = arrayOne
+    let arr2 = arrayTwo 
 
     // loop through the first array which we concated and sorted
     for (let i = 0; i < arr1.length; i++) {
