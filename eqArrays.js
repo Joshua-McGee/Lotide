@@ -1,14 +1,3 @@
-const assertEqual = function(actual, expected, message) {
-  // if the first parameter is equal to the second
-  if (actual === expected) { // if the eqArrays function returns true print this otherwise else runs.
-    console.log(`👌👌👌👌 Assertion Passed: ${actual} === ${expected}`)
-
-  } else { //otherwise
-    console.log(`💩💩💩💩 Assertion Failed: ${actual} !== ${expected}`)
-
-  }
-}
-
 // pass the two arrays into the function
 const eqArrays = function(arrayOne, arrayTwo) { 
 
@@ -30,10 +19,4 @@ const eqArrays = function(arrayOne, arrayTwo) {
     return true;
   }
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => false
-
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => false
-
-// need to take 2 arrays as an input and return true or false
+module.exports = eqArrays;
