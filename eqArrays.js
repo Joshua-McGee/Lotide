@@ -3,7 +3,7 @@ const eqArrays = function(arrayOne, arrayTwo) {
 
   // set the condition for the array returning false 
   // (make sure they are both arrays and the same length) if not return false
-  if (!Array.isArray(arrayOne) || ! Array.isArray(arrayTwo) || arrayOne.length !== arrayTwo.length)
+  if (!Array.isArray(arrayOne) && ! Array.isArray(arrayTwo) && arrayOne.length !== arrayTwo.length)
     return false;
 
     let arr1 = arrayOne
