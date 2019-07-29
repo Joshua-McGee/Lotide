@@ -33,10 +33,12 @@ const eqArrays = function(arrayOne, arrayTwo) {
 const without = function(sourceArr, itemsToRemove) {
     
   // loop through the itemsToRemove array
-  for (let i = 0; i < itemsToRemove.length; i++) {
+  //for (let i = 0; i < itemsToRemove.length; i++) {
+  // can do with filter() & look at sets()
+    for(let num of itemsToRemove) { // for of loop looks at the number its given (not index of number)
     // if the source array items include items to remove run this code
-    if (sourceArr.includes(itemsToRemove[i])){
-      sourceArr.splice(i, 1);
+    if (sourceArr.includes(itemsToRemove[num])){
+      sourceArr.splice(num, 1);
     }
     //while the index of the sourceArr is the same as index of itemsToRemove and they do not equal -1
     // while ((index = sourceArr.indexOf(itemsToRemove[i])) !== -1 ) {

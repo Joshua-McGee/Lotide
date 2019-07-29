@@ -1,6 +1,6 @@
 const assertEqual = function(actual, expected, message) {
   // if the first parameter is equal to the second
-  if (actual === expected) {
+  if (actual === expected) { // if the eqArrays function returns true print this otherwise else runs.
     console.log(`👌👌👌👌 Assertion Passed: ${actual} === ${expected}`)
 
   } else { //otherwise

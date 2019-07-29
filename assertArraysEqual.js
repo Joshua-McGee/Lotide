@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected, message) {
+const assertArraysEqual = function(actual, expected, message) {
   // if the first parameter is equal to the second
   if (eqArrays(actual, expected) === true) { // if the eqArrays function returns true print this otherwise else runs.
     console.log(`👌👌👌👌 Assertion Passed: ${actual} === ${expected}`)
@@ -30,8 +30,8 @@ const eqArrays = function(arrayOne, arrayTwo) {
     return true;
   }
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => false
+assertArraysEqual([1, 2, 3], [1, 2, 3]); // => should PASS
+assertArraysEqual([1, 2, 3], [3, 2, 1]); // => false
 
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => false
+assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]); // => true
+assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // => false
