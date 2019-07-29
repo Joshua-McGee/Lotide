@@ -12,7 +12,7 @@ const middle = function(array) {
       arrayResult = [array[(array.length / 2 ) - 1], array[array.length / 2]]; // returns the 2 middle index's
       //console.log('Im odd and returned the middle indexs');
     } else {
-      arrayResult = array[(array.length - 1) / 2]; // returns the third index - 1
+      arrayResult.push(array[(array.length - 1) / 2]); // returns the third index - 1
       //console.log("i know this is even");
     }
 
