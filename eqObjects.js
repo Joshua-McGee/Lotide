@@ -1,35 +1,36 @@
-const assertEqual = function (actual, expected) {
-  // if the first parameter is equal to the second
-  if (actual === expected) {
-    console.log(`👌👌👌👌 Assertion Passed: ${actual} === ${expected}`)
+// const assertEqual = function (actual, expected) {
+//   // if the first parameter is equal to the second
+//   if (actual === expected) {
+//     console.log(`👌👌👌👌 Assertion Passed: ${actual} === ${expected}`)
 
-  } else { //otherwise
-    console.log(`💩💩💩💩 Assertion Failed: ${actual} !== ${expected}`)
+//   } else { //otherwise
+//     console.log(`💩💩💩💩 Assertion Failed: ${actual} !== ${expected}`)
 
-  }
-  return;
-}
+//   }
+//   return;
+// }
 
-const eqArrays = function (arrayOne, arrayTwo) {
+// const eqArrays = function (arrayOne, arrayTwo) {
 
-  // set the condition for the array returning false 
-  // (make sure they are both arrays and the same length) if not return false
-  if (!Array.isArray(arrayOne) || !Array.isArray(arrayTwo) || arrayOne.length !== arrayTwo.length)
-    return false;
+//   // set the condition for the array returning false 
+//   // (make sure they are both arrays and the same length) if not return false
+//   if (!Array.isArray(arrayOne) || !Array.isArray(arrayTwo) || arrayOne.length !== arrayTwo.length)
+//     return false;
 
-  let arr1 = arrayOne
-  let arr2 = arrayTwo
+//   let arr1 = arrayOne
+//   let arr2 = arrayTwo
 
-  // loop through the first array which we concated and sorted
-  for (let i = 0; i < arr1.length; i++) {
-    // if the index of the first array doesnt match the second
-    if (arr1[i] !== arr2[i])
-      return false;
-  }
-  // if non of the code above runs return true because it has to match
-  return true;
-}
-
+//   // loop through the first array which we concated and sorted
+//   for (let i = 0; i < arr1.length; i++) {
+//     // if the index of the first array doesnt match the second
+//     if (arr1[i] !== arr2[i])
+//       return false;
+//   }
+//   // if non of the code above runs return true because it has to match
+//   return true;
+// }
+const eqArrays = require('./eqArrays');
+const assertEqual = require('./assertEqual');
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
 const eqObjects = function (object1, object2) {
@@ -58,6 +59,8 @@ const eqObjects = function (object1, object2) {
   }
   return true; // only returns true if the code can make it through all the if statements.
 };
+
+module.exports = eqObjects;
 
 const ab = {
   a: "1",
