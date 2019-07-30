@@ -44,5 +44,7 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+module.exports = letterPositions;
+
 console.log(letterPositions("lighthouse in the house"));
 // console.log(assertEqual(letterPositions("lighthouse in the house").h, [4]));

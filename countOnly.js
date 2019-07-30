@@ -27,6 +27,8 @@ const countOnly = function(allItems, itemsToCount) {
   return results;
 }
 
+module.exports = countOnly;
+
 // object by the name of firstNames
 const firstNames = [
   "Karl",

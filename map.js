@@ -42,6 +42,7 @@ const map = function(array, callback) { // create a function called map that tak
   }
   return results;
 }
+module.exports = map;
 
 // this is a function that takes 2 arguments
 // words is the array, word an empty parameter and the function is returniong the empty parameters first index.

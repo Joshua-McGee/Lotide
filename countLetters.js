@@ -31,6 +31,8 @@ const countLetters = function(string) {
   return obj;
 }
 
+module.exports = countLetters;
+
 console.log(countLetters("lighthouse in the house"));
 // runs my assertEqual function to check if the number of h's is equal to 4
 // .h is using dot notation to find the parent of h in countLetters aka how many times it appears.
